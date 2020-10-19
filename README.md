@@ -6,7 +6,11 @@
 
 ## Steps
 
-...
+### 01 - Pure Component
+
+1. Create `components` directory in `src`
+2. Create `<Header />` component in `components` dir. It should contain a heading and your name.
+3. Use `<Header />` in `<App />`.
 
 ## Info
 
