@@ -9,7 +9,7 @@ const Dropdown = ({title, options}) => {
       </button>
       <div className="dropdown__body">
         <ul>
-          {options.map((option) => <li>{option}</li>)}
+          {options.map((option, i) => <li key={i} >{option}</li>)}
         </ul>
       </div>
     </div>
