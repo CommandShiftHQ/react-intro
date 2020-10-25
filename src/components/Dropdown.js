@@ -1,16 +1,15 @@
 import React from 'react';
 
-const Dropdown = () => {
+const Dropdown = ({title, options}) => {
+
   return (
     <div className="dropdown">
       <button className="dropdown__header">
-        Dropdown header - functional
+        {title}
       </button>
       <div className="dropdown__body">
         <ul>
-          <li>option 1</li>
-          <li>option 2</li>
-          <li>option 3</li>
+          {options.map((option) => <li>{option}</li>)}
         </ul>
       </div>
     </div>
