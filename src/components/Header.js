@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Header = () => {
+const Header = ({name}) => {
   return (
     <header>
       <h1>React Intro</h1>
-      <div>by STUDENT'S NAME</div>
+      <div>by {name}</div>
     </header>
   );
 }
