@@ -19,6 +19,11 @@
 3. Add `title` and `options` props to `<Dropdown />`.
 4. Check if you have any errors in the console ;) This [link](https://reactjs.org/docs/lists-and-keys.html#keys) might help you.
 
+### 03 - Conditional rendering
+
+1. Add const `isOpen` in `<Dropdown />` and set to `false`.
+2. Render dropdown option only if `isOpen` is `true`. You don't have add any method changing a value of `isOpen`, we will deal with that later, but for know using `const` is enough.
+
 ## Info
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
