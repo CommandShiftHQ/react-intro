@@ -12,6 +12,13 @@
 2. Create `<Header />` component in `components` dir. It should contain a heading and your name.
 3. Use `<Header />` in `<App />`.
 
+### 02 - Props
+
+1. Add prop `name` to `<Header />`.
+2. Build simple `<Dropdown />` component that will contain a button and list of options. Don't worry about hiding and revealing options, or styling it. We will do that later.
+3. Add `title` and `options` props to `<Dropdown />`.
+4. Check if you have any errors in the console ;) This [link](https://reactjs.org/docs/lists-and-keys.html#keys) might help you.
+
 ## Info
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
