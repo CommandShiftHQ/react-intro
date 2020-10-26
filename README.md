@@ -24,6 +24,11 @@
 1. Add const `isOpen` in `<Dropdown />` and set to `false`.
 2. Render dropdown option only if `isOpen` is `true`. You don't have add any method changing a value of `isOpen`, we will deal with that later, but for know using `const` is enough.
 
+### 04 - Props validation
+
+1. Import `PropTypes` module.
+2. Add props validation to `<Header />` and `<Dropdown />`. This [link](https://reactjs.org/docs/typechecking-with-proptypes.html) might help you.
+
 ## Info
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
