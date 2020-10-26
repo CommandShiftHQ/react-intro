@@ -6,7 +6,7 @@ const Dropdown = ({title, options}) => {
 
   return (
     <div className="dropdown">
-      <button className="dropdown__header">
+      <button className="dropdown__header" onClick={() => setIsOpen(!isOpen)}>
         {title}
       </button>
       {
