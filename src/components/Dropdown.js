@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 
 const Dropdown = ({title, options}) => {
-  const isOpen = false;
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="dropdown">
