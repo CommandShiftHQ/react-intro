@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Dropdown = ({title, options}) => {
   const isOpen = false;
@@ -17,9 +18,13 @@ const Dropdown = ({title, options}) => {
           </div>
         )
       }
-
     </div>
   );
 }
+
+Dropdown.propTypes = {
+  title: PropTypes.string.isRequired,
+  options: PropTypes.array.isRequired,
+};
 
 export default Dropdown;
