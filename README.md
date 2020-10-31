@@ -29,6 +29,29 @@
 1. Import `PropTypes` module.
 2. Add props validation to `<Header />` and `<Dropdown />`. This [link](https://reactjs.org/docs/typechecking-with-proptypes.html) might help you.
 
+### 05 - State
+
+1. Import useState hook at the beginning of `Dropdown.js` file.
+   `import React, {useState} from 'react';`
+2. Replace static `isOpen` const to state with `useState` hook, with initial value of false.
+   `const [isOpen, setIsOpen] = useState(false);`
+3. Add `onClick` prop to attach event listener to `<button>` in `<Dropdown />`. Set value of this prop to `() => setIsOpen(!isOpen)`. Now `<Dropdown />` should be opening and closing when you clock on the button.
+   `<button className="dropdown__header" onClick={() => setIsOpen(!isOpen)}>`
+4. To register which option of the `<Dropdown />` has been selected button:
+
+- Add `useState` hook for `selectedValue`.
+  `const [selectedValue, setSelectedValue] = useState(null);`
+- Add `id` property to each option stored in `dropdown`. Currently stored value assign to `label` property, for example:
+  `{ id: 1, label: 'option 1' }`
+- Refactor `<li>`s so `key` prop will store option `id` value: `key={option.id}`.
+- Add `onClick` prop to attach event listener to each `<li>` with value of `() => setSelectedValue(option.id)`.
+- Create `getSelectedOption` const where value would be entire selected `option` object, as per example above. You can that object with `find()` method where you can compare `option.id` of each option with `selectedValue`.
+
+5. To display selected option on the `<Dropdown />` button:
+
+- Add `getDropdownTitle` with a value of either `title` prop and "title - [selected option label]", depending what value `selectedOption` holds (either null or a value).
+- Replace usage of `title` in the button to `getDropdownTitle`.
+
 ## Info
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
