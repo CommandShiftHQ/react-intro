@@ -8,10 +8,22 @@ function App() {
   const dropdown = {
     title: "Sample dropdown",
     options: [
-      'option 1',
-      'option 2',
-      'option 3',
-      'option 4',
+      {
+        id: 1,
+        label: 'option 1',
+      },
+      {
+        id: 2,
+        label: 'option 2',
+      },
+      {
+        id: 3,
+        label: 'option 3',
+      },
+      {
+        id: 4,
+        label: 'option 4',
+      }
     ]
   }
 

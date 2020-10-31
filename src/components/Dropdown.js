@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 
 const Dropdown = ({title, options}) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [selectedValue, setSelectedValue] = useState(null);
+
+  const getSelectedOption = options.find((option) => option.id === selectedValue);
 
   return (
     <div className="dropdown">
@@ -13,7 +16,11 @@ const Dropdown = ({title, options}) => {
         isOpen && (
           <div className="dropdown__body">
             <ul>
-              {options.map((option, i) => <li key={i} >{option}</li>)}
+              {options.map((option) => (
+              <li key={option.id} onClick={() => setSelectedValue(option.id)}>
+                {option.label}
+              </li>
+            ))}
             </ul>
           </div>
         )
