@@ -1,8 +1,18 @@
 # React Intro
 
-## Objective
+## Objectives
 
-...
+After this demo presentation students should know:
+
+- how to building simple, pure components,
+- what props are,
+- how to pass props from parent to child component,
+- how to use conditional rendering,
+- how to validate props,
+- what state is\*,
+- what is the difference between props and state.
+
+\* React hooks will be explained in more details in other demos and lectures.
 
 ## Steps
 
